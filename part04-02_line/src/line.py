@@ -1,8 +1,8 @@
-def line(count: int, char: str) -> None:
-    if len(char) == 0:
-        print("*" * count)
+def line(width: int, string: str) -> None:
+    if len(string) == 0:
+        print("*" * width)
     else:
-        print(char[0] * count)
+        print(string[0] * width)
 
 
 if __name__ == "__main__":
