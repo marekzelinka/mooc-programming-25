@@ -4,9 +4,9 @@ def spruce(height: int) -> None:
     i = 1
 
     while i <= height:
-        spaces = height - i
-        stars = 2 * i - 1
-        print(f"{' ' * spaces}{'*' * stars}")
+        spaces = " " * (height - i)
+        stars = "*" * (2 * i - 1)
+        print(spaces, stars, sep="")
 
         i += 1
 
