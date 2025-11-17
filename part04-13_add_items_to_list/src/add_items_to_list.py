@@ -1,4 +1,6 @@
-list = []
+from typing import List
+
+list: List[int] = []
 
 count = int(input("How many items: "))
 
