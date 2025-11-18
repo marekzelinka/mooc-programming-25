@@ -1,8 +1,5 @@
-from typing import List
-
-
-def all_the_longest(strings: List[str]) -> List[str]:
-    longest: List[str] = []
+def all_the_longest(strings: list[str]) -> list[str]:
+    longest: list[str] = []
 
     for string in strings:
         if longest == [] or len(string) > len(longest[0]):

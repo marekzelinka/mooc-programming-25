@@ -1,12 +1,10 @@
-from typing import List
-
-list: List[str] = []
+words: list[str] = []
 
 while True:
     word = input("Word: ")
 
-    if word in list:
-        print(f"You typed in {len(list)} different words")
+    if word in words:
+        print(f"You typed in {len(words)} different words")
         break
     else:
-        list.append(word)
+        words.append(word)

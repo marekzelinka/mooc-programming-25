@@ -1,7 +1,4 @@
-from typing import List
-
-
-def length_of_longest(strings: List[str]) -> int:
+def length_of_longest(strings: list[str]) -> int:
     longest = strings[0]
 
     for string in strings[1:]:

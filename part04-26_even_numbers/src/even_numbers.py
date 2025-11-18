@@ -1,8 +1,5 @@
-from typing import List
-
-
-def even_numbers(numbers: List[int]) -> List[int]:
-    new: List[int] = []
+def even_numbers(numbers: list[int]) -> list[int]:
+    new: list[int] = []
 
     for n in numbers:
         if n % 2 == 0:

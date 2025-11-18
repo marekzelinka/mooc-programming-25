@@ -1,7 +1,4 @@
-from typing import List
-
-
-def shortest(strings: List[str]) -> str:
+def shortest(strings: list[str]) -> str:
     candidate = strings[0]
 
     for string in strings[1:]:

@@ -1,16 +1,14 @@
-from typing import List
-
-list: List[int] = []
+numbers: list[int] = []
 
 while True:
-    item = int(input("New item:"))
+    number = int(input("New item:"))
 
-    if item == 0:
+    if number == 0:
         print("Bye!")
 
         break
 
-    list.append(item)
+    numbers.append(number)
 
-    print(f"The list now: {list}")
-    print(f"The list in order: {sorted(list)}")
+    print(f"The list now: {numbers}")
+    print(f"The list in order: {sorted(numbers)}")

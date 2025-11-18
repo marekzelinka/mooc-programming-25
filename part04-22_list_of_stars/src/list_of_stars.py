@@ -1,9 +1,6 @@
-from typing import List
-
-
-def list_of_stars(list: List[int]) -> None:
-    for i in list:
-        print("*" * i)
+def list_of_stars(numbers: list[int]) -> None:
+    for number in numbers:
+        print("*" * number)
 
 
 if __name__ == "__main__":

@@ -1,15 +1,13 @@
-from typing import List
-
-list: List[int] = []
+numbers: list[int] = []
 
 count = int(input("How many items: "))
 
 i = 1
 
 while i <= count:
-    value = int(input(f"Item:{i} "))
-    list.append(value)
+    number = int(input(f"Item:{i} "))
+    numbers.append(number)
 
     i += 1
 
-print(list)
+print(numbers)

@@ -1,8 +1,5 @@
-from typing import List
-
-
-def range_of_list(list: List[int]) -> int:
-    ordered = sorted(list)
+def range_of_list(numbers: list[int]) -> int:
+    ordered = sorted(numbers)
     first = ordered[0]
     last = ordered[-1]
 

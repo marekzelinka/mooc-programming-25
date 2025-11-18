@@ -1,18 +1,16 @@
-from typing import List
-
-list: List[int] = []
+numbers: list[int] = []
 
 
 while True:
-    print(f"The list is now {list}")
+    print(f"The list is now {numbers}")
 
     action = input("a(d)d, (r)emove or e(x)it: ")
 
     if action == "d":
-        list.append(len(list) + 1)
+        numbers.append(len(numbers) + 1)
     elif action == "r":
-        if len(list) != 0:
-            list.pop()
+        if len(numbers) != 0:
+            numbers.pop()
     elif action == "x":
         print("Bye!")
 

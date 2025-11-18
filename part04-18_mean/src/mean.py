@@ -1,10 +1,7 @@
-from typing import List
+def mean(numbers: list[int]) -> float:
+    total = sum(numbers)
 
-
-def mean(list: List[int]) -> float:
-    total = sum(list)
-
-    return total / len(list)
+    return total / len(numbers)
 
 
 if __name__ == "__main__":

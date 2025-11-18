@@ -1,12 +1,9 @@
-from typing import List
-
-
-def sum_of_positives(list: List[int]) -> int:
+def sum_of_positives(numbers: list[int]) -> int:
     sum = 0
 
-    for n in list:
-        if n > 0:
-            sum += n
+    for number in numbers:
+        if number > 0:
+            sum += number
 
     return sum
 

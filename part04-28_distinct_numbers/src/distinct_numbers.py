@@ -1,12 +1,9 @@
-from typing import List
+def distinct_numbers(numbers: list[int]) -> list[int]:
+    new: list[int] = []
 
-
-def distinct_numbers(numbers: List[int]) -> List[int]:
-    new: List[int] = []
-
-    for n in numbers:
-        if n not in new:
-            new.append(n)
+    for number in numbers:
+        if number not in new:
+            new.append(number)
 
     new.sort()
 

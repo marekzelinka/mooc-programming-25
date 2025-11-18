@@ -1,20 +1,17 @@
-from typing import List
-
-
-def list_sum(first: List[int], second: List[int]) -> List[int]:
+def list_sum(numbers_a: list[int], numbers_b: list[int]) -> list[int]:
     """
     Takes two lists of integers as arguments and returns a new list which contains the sums of the items at each index in the two original lists.
     """
-    new: List[int] = []
+    new: list[int] = []
 
     # Another solution would be use zip-function,
     # which creates new list by combining items in two or more lists
     # for item1, item2 in zip(list1, list2):
     #   results.append(item1 + item2)
     # Write your solution here
-    for i in range(len(first)):
-        a = first[i]
-        b = second[i]
+    for i in range(len(numbers_a)):
+        a = numbers_a[i]
+        b = numbers_b[i]
 
         new.append(a + b)
 
