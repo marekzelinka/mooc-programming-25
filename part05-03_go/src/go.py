@@ -1,4 +1,4 @@
-def count_pieces(board: list[list[int]], player: int) -> int:
+def count_squares(board: list[list[int]], player: int) -> int:
     count = 0
 
     for row in board:
@@ -10,12 +10,12 @@ def count_pieces(board: list[list[int]], player: int) -> int:
 
 
 def who_won(game_board: list) -> int:
-    player_a_pieces = count_pieces(game_board, 1)
-    player_b_pieces = count_pieces(game_board, 2)
+    player_a_squares = count_squares(game_board, 1)
+    player_b_squares = count_squares(game_board, 2)
 
-    if player_a_pieces == player_b_pieces:
+    if player_a_squares == player_b_squares:
         return 0
-    elif player_a_pieces > player_b_pieces:
+    elif player_a_squares > player_b_squares:
         return 1
     else:
         return 2
