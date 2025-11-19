@@ -1,9 +1,9 @@
 def count_matching_elements(matrix: list[list[int]], element: int) -> int:
-    matches: int = 0
+    matches = 0
 
-    for row in range(len(matrix)):
-        for col in range(len(matrix[row])):
-            if matrix[row][col] == element:
+    for row in matrix:
+        for col in row:
+            if col == element:
                 matches += 1
 
     return matches
