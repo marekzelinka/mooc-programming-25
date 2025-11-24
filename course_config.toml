@@ -608,6 +608,82 @@ checksum = "2340604c86baff1659158177ee516486"
 id = 272870
 checksum = "cb44a7e4ee917326d644868da2fd9668"
 
+[exercises.part06-01_largest_number]
+id = 272995
+checksum = "128f64f61b34cdeec87708de88a4f9f2"
+
+[exercises.part06-02_fruit_market]
+id = 272981
+checksum = "dc40a9c36ce4038ee8100bf5498661dd"
+
+[exercises.part06-03_matrix]
+id = 272977
+checksum = "4ca789bffb78151c36976c7ef8309757"
+
+[exercises.part06-04_course_grading_part_1]
+id = 272980
+checksum = "f35fad9f23560cad46fa224a80b946bc"
+
+[exercises.part06-05_course_grading_part_2]
+id = 272992
+checksum = "fef60ecdc1aca0b6e24d7a4befd63664"
+
+[exercises.part06-06_course_grading_part_3]
+id = 272986
+checksum = "e65f42cdd26f9a438b783c494644d201"
+
+[exercises.part06-07_spellchecker]
+id = 272994
+checksum = "088b17d99e1c2c5b09593131a9c0d6cd"
+
+[exercises.part06-08_recipe_search]
+id = 272987
+checksum = "4d9a4ab2e3b1b7fe0ceddac2318e05e2"
+
+[exercises.part06-09_city_bikes]
+id = 272990
+checksum = "d40a7c30e1a54b037676efbfd086b130"
+
+[exercises.part06-10_inscription]
+id = 272985
+checksum = "a15aa87ce7179f4985a59b911cc05f1d"
+
+[exercises.part06-11_diary]
+id = 272984
+checksum = "bd775e74ffbf5f33d346ce56b26c47a2"
+
+[exercises.part06-12_filtering_file_contents]
+id = 272993
+checksum = "97ac5cf1169e630c0e03b66f78c58534"
+
+[exercises.part06-13_store_personal_data]
+id = 272978
+checksum = "be9444864d1f253ca7af07eaeca1a204"
+
+[exercises.part06-14_course_grading_part_4]
+id = 272979
+checksum = "f394a67c340097c6605ec49d86ae6076"
+
+[exercises.part06-15_word_search]
+id = 272983
+checksum = "d8921112956d26782ac7f20887d9f309"
+
+[exercises.part06-16_dictionary_file]
+id = 272989
+checksum = "b1440d20b21cfec94412c5eae17671e1"
+
+[exercises.part06-17_read_input]
+id = 272982
+checksum = "9cfa27b8753fb182c9fb0229b67ffb37"
+
+[exercises.part06-18_parameter_validation]
+id = 272991
+checksum = "c4e43deda7163ffa06741f00b3e8abdd"
+
+[exercises.part06-19_incorrect_lottery_numbers]
+id = 272988
+checksum = "7984bd56e31eb50c346535ae400cf098"
+
 [exercises.part08-01_smallest_average]
 id = 272962
 checksum = "7b173687bf0adebc4a486a68f6c32031"
