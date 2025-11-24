@@ -1,4 +1,4 @@
-def recipes(filename: str) -> dict:
+def recipes(filename: str) -> dict[str, dict]:
     recipe_list = {}
 
     with open(filename) as file:
@@ -27,7 +27,7 @@ def search_by_time(filename: str, prep_time: int):
     return [
         f"{recipe_name}, preparation time {recipe.get('prep_time')} min"
         for recipe_name, recipe in recipes(filename).items()
-        if recipe.get("prep_time") <= prep_time
+        if recipe.get("prep_time", 0) <= prep_time
     ]
 
 
