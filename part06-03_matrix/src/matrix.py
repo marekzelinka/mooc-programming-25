@@ -4,7 +4,6 @@ def read_matrix() -> list[list[int]]:
     with open("matrix.txt") as file:
         for line in file:
             line = line.replace("\n", "")
-
             raw_numbers = line.split(",")
 
             row: list[int] = []

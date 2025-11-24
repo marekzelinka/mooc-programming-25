@@ -4,8 +4,8 @@ def read_fruits() -> dict[str, float]:
     with open("fruits.csv") as file:
         for line in file:
             line = line.replace("\n", "")
-
             parts = line.split(";")
+
             name = parts[0]
             price = float(parts[1])
 
