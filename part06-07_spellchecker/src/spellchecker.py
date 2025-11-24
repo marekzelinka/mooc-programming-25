@@ -1,4 +1,4 @@
-def wordlist():
+def wordlist() -> list[str]:
     words: list[str] = []
 
     with open("wordlist.txt") as file:
