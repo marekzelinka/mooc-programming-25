@@ -6,6 +6,7 @@ def largest() -> int:
             line = line.replace("\n", "")
 
             number = int(line)
+
             numbers.append(number)
 
     largest_number = max(numbers)
