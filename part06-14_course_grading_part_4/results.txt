@@ -1,6 +1,6 @@
 Advanced Programming Course, 5 credits
 ======================================
-name                          exec_nbr  exec_pts. exm_pts.  tot_pts.  grade
+name                          exec_nbr  exec_pts. exm_pts.  tot_pts.  grade     
 pekka peloton                 25        6         11        17        1         
 jaana javanainen              27        6         10        16        1         
 liisa virtanen                35        8         6         14        0         
