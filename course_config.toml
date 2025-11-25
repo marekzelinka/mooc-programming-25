@@ -684,6 +684,78 @@ checksum = "c4e43deda7163ffa06741f00b3e8abdd"
 id = 272988
 checksum = "7984bd56e31eb50c346535ae400cf098"
 
+[exercises.part07-01_hypotenuse]
+id = 273042
+checksum = "943685b853591b2b99d26943437ed2e4"
+
+[exercises.part07-02_special_characters]
+id = 273032
+checksum = "cb13f824fcb36019c2d4d7762f2ad2e6"
+
+[exercises.part07-03_fractions]
+id = 273029
+checksum = "2663b23a4209e7245dedb484ac8584c1"
+
+[exercises.part07-04_lottery_numbers]
+id = 273039
+checksum = "53acc1d6ae2300162ad26794a486cf7f"
+
+[exercises.part07-05_password_generator_part_1]
+id = 273028
+checksum = "d434c3f6db036568d35ed587c0c493cb"
+
+[exercises.part07-06_password_generator_part_2]
+id = 273044
+checksum = "0f6d0fb3d833a1401eb4fbcbbc4eec23"
+
+[exercises.part07-07_dice_roller]
+id = 273035
+checksum = "d11e7b7a578c57a7b35d4b47bfa61ded"
+
+[exercises.part07-08_random_words]
+id = 273038
+checksum = "a0bc802f27442564165e80ad6c79a962"
+
+[exercises.part07-09_how_old]
+id = 273040
+checksum = "27d20c141654e3115946ec25b5dafffb"
+
+[exercises.part07-10_valid_pic]
+id = 273037
+checksum = "547883b55edc9aadad1786fc3ac7ee05"
+
+[exercises.part07-11_screen_time]
+id = 273027
+checksum = "7f8299bea8bf8067e6703e2a82b982c1"
+
+[exercises.part07-12_json_files]
+id = 273041
+checksum = "cdb9bafdea65e7eca22c15fef926b193"
+
+[exercises.part07-13_course_statistics]
+id = 273033
+checksum = "df6ec1027c08acfb1ee3ca6ccea36daf"
+
+[exercises.part07-14_who_cheated]
+id = 273036
+checksum = "5dd42233d4452867df18c4f324ef9647"
+
+[exercises.part07-15_who_cheated_2]
+id = 273034
+checksum = "872f68aaaf37df4e83532c31d01f9b08"
+
+[exercises.part07-16_spellchecker_2]
+id = 273043
+checksum = "b50379047603d3c031ae5a7c4a991347"
+
+[exercises.part07-17_string_helper]
+id = 273030
+checksum = "12b0968c95c2ca1ff2446226bac7361a"
+
+[exercises.part07-18_own_programming_language]
+id = 273031
+checksum = "85f451181b069b4e31f6c8b45b800cde"
+
 [exercises.part08-01_smallest_average]
 id = 272962
 checksum = "7b173687bf0adebc4a486a68f6c32031"
