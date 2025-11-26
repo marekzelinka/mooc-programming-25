@@ -1,6 +1,6 @@
+import json
+import math
 import urllib.request
-from json import loads
-from math import floor
 
 
 def retrieve_all() -> list[tuple[str, str, int, int]]:
@@ -9,7 +9,7 @@ def retrieve_all() -> list[tuple[str, str, int, int]]:
     response = urllib.request.urlopen(base_url)
     data = response.read()
 
-    courses = loads(data)
+    courses = json.loads(data)
 
     return [
         (course["fullName"], course["name"], course["year"], sum(course["exercises"]))
@@ -26,14 +26,14 @@ def retrieve_course(course_name: str) -> dict[str, int]:
     response = urllib.request.urlopen(base_url)
     data = response.read()
 
-    course = loads(data)
+    course = json.loads(data)
 
     week_count = len(course)
     total_students = max(week["students"] for week in course.values())
     total_hours = sum(week["hour_total"] for week in course.values())
-    hours_average = floor(total_hours / total_students)
+    hours_average = math.floor(total_hours / total_students)
     total_exercises = sum(week["exercise_total"] for week in course.values())
-    exercises_average = floor(total_exercises / total_students)
+    exercises_average = math.floor(total_exercises / total_students)
 
     return {
         "weeks": week_count,
