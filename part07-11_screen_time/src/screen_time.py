@@ -6,7 +6,7 @@ day_count = int(input("How many days: "))
 
 starting_date = datetime.strptime(starting_date_str, "%d.%m.%Y")
 ending_date = starting_date + timedelta(day_count - 1)
-timetable: dict[str, tuple[int, ...]] = {}
+timetable: dict[str, list[int]] = {}
 
 print("Please type in screen time in minutes on each day (TV computer mobile):")
 
@@ -16,7 +16,7 @@ for days in range(day_count):
 
     screen_times = input(f"Screen time {date}: ")
 
-    timetable[date] = tuple(int(screen_time) for screen_time in screen_times.split(" "))
+    timetable[date] = [int(screen_time) for screen_time in screen_times.split(" ")]
 
 total_minutes = sum(sum(screen_times) for _date, screen_times in timetable.items())
 average_minutes = total_minutes / day_count
@@ -37,10 +37,3 @@ with open(filename, "w") as file:
         file.write(line + "\n")
 
 print(f"Data stored in file {filename}")
-
-# Screen time 24.06.2020: 60 120 0
-# Screen time 25.06.2020: 0 0 0
-# Screen time 26.06.2020: 180 0 0
-# Screen time 27.06.2020: 25 240 15
-# Screen time 28.06.2020: 45 90 5
-# Data stored in file late_june.txt
