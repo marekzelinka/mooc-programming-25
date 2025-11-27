@@ -3,8 +3,6 @@ def find_words(search_term: str) -> list[str]:
 
     with open("words.txt") as file:
         for line in file:
-            line = line.replace("\n", "")
-
             word = line.strip()
 
             matches = False
