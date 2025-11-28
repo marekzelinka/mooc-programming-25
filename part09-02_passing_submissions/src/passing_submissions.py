@@ -1,10 +1,10 @@
 # Do not make changes to the class!
 class ExamSubmission:
-    def __init__(self, examinee: str, points: int):
-        self.examinee = examinee
-        self.points = points
+    def __init__(self, examinee: str, points: int) -> None:
+        self.examinee: str = examinee
+        self.points: int = points
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"ExamSubmission (examinee: {self.examinee}, points: {self.points})"
 
 

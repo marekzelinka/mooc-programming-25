@@ -1,10 +1,10 @@
 # Note! Do not change the class Person!
 class Person:
     def __init__(self, name: str, age: int, height: int, weight: int) -> None:
-        self.name = name
-        self.age = age
-        self.height = height
-        self.weight = weight
+        self.name: str = name
+        self.age: int = age
+        self.height: int = height
+        self.weight: int = weight
 
 
 class BabyCentre:

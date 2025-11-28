@@ -1,9 +1,9 @@
 class Series:
     def __init__(self, title: str, seasons: int, genres: list[str]) -> None:
-        self.title = title
-        self.seasons = seasons
-        self.geners = genres
-        self.ratings = []
+        self.title: str = title
+        self.seasons: int = seasons
+        self.geners: list[str] = genres
+        self.ratings: list[int] = []
 
     def __str__(self) -> str:
         lines: list[str] = []
@@ -11,7 +11,7 @@ class Series:
         lines.append(f"{self.title} ({self.seasons} seasons)")
         lines.append(f"genres: {', '.join(self.geners)}")
 
-        if len(self.ratings):
+        if self.ratings:
             lines.append(f"{len(self.ratings)} ratings, average {self.rating()} points")
         else:
             lines.append("no ratings")
@@ -19,10 +19,10 @@ class Series:
         return "\n".join(lines)
 
     def rating(self):
-        if not len(self.ratings):
+        if not self.ratings:
             return 0
 
-        return round(sum(rating for rating in self.ratings) / len(self.ratings), 1)
+        return round(sum(self.ratings) / len(self.ratings), 1)
 
     def rate(self, rating: int) -> None:
         self.ratings.append(rating)

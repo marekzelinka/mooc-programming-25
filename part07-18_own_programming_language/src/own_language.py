@@ -1,3 +1,4 @@
+import operator
 import string
 
 from .types import Locations, Results, Variables
@@ -20,6 +21,8 @@ def assignment(vars, *args: str):
         vars[a] -= value
     elif op == "MUL":
         vars[a] *= value
+    else:
+        raise ValueError(f"Unknown assignment operation: {op}")
 
 
 def check_expression(vars: Variables, *args: str) -> bool:
@@ -28,51 +31,46 @@ def check_expression(vars: Variables, *args: str) -> bool:
     value1 = vars[a]
     value2 = int(b) if b.isdigit() else vars[b]
 
-    result = False
+    OPERATORS = {
+        "==": operator.eq,
+        "!=": operator.ne,
+        "<=": operator.le,
+        ">=": operator.ge,
+        "<": operator.lt,
+        ">": operator.gt,
+    }
 
-    if "=" in op:
-        if op == "==":
-            result = value1 == value2
-        elif "!" in op:
-            result = value1 != value2
-        elif "<" in op:
-            result = value1 <= value2
-        elif ">" in op:
-            result = value1 >= value2
-    elif "<" in op:
-        result = value1 < value2
-    elif ">" in op:
-        result = value1 > value2
+    op_function = OPERATORS.get(op)
 
-    return result
+    if not op_function:
+        raise ValueError(f"Unknown operator: {op}")
+
+    return op_function(value1, value2)
 
 
 def run(program: list[str]) -> Results:
     results: Results = []
     vars: Variables = {char: 0 for char in string.ascii_uppercase}
-
     locations: Locations = {
-        position[:-1]: program.index(position)
-        for position in program
-        if position.endswith(":")
+        instruction[:-1]: i
+        for i, instruction in enumerate(program)
+        if instruction.endswith(":")
     }
-
     position = 0
 
     while position < len(program):
         row = program[position]
-
         parts = row.split(" ")
+        command = parts[0]
 
-        if row == "END":
+        if command == "END":
             # We reached the end of our program
-            #
             break
-        elif row.endswith(":"):
-            # LOCATION command: we ignore the location commands, because we already have them setup
-            #
-            pass
-        elif row.startswith("PRINT"):
+        elif command.endswith(":"):
+            position += 1  # Ignore location markers
+            continue
+
+        if row.startswith("PRINT"):
             # PRINT command: we first figure out if we are printing
             # a number or a variable and then add the variable it to results.
 

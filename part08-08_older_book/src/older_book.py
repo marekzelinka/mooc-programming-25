@@ -16,12 +16,12 @@ class Book:
 
 
 def older_book(book1: Book, book2: Book) -> None:
-    if book1.year < book2.year:
-        print(f"{book1.name} is older, it was published in {book1.year}")
-    elif book2.year < book1.year:
-        print(f"{book2.name} is older, it was published in {book2.year}")
-    else:
+    if book1.year == book2.year:
         print(f"{book1.name} and {book2.name} were published in {book1.year}")
+    else:
+        older = book1 if book1.year < book2.year else book2
+
+        print(f"{older.name} is older, it was published in {older.year}")
 
 
 if __name__ == "__main__":

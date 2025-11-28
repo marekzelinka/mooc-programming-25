@@ -9,7 +9,7 @@ class NumberStats:
         return len(self.numbers)
 
     def get_sum(self) -> int:
-        return sum(number for number in self.numbers)
+        return sum(self.numbers)
 
     def average(self) -> float:
         if not self.count_numbers():

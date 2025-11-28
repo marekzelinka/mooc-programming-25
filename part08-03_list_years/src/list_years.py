@@ -1,10 +1,8 @@
-# Write your solution here
-# Remember the import statement
 from datetime import date
 
 
 def list_years(dates: list[date]) -> list[int]:
-    return sorted([date.year for date in dates])
+    return sorted(map(lambda date: date.year, dates))
 
 
 if __name__ == "__main__":

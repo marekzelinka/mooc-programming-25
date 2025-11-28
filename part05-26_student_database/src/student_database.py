@@ -1,4 +1,4 @@
-from .typehints import Course
+from .types import Course
 
 
 def add_student(students: dict[str, list[Course]], student: str) -> None:
@@ -26,7 +26,7 @@ def print_student(students: dict[str, list[Course]], student: str) -> None:
     for student, grade in courses:
         print(f"  {student} {grade}")
 
-    average_grade = sum([course[1] for course in courses]) / len(courses)
+    average_grade = sum(map(lambda course: course[1], courses)) / len(courses)
 
     print(f" average grade {average_grade}")
 

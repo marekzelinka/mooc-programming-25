@@ -1,8 +1,8 @@
 class LunchCard:
-    def __init__(self, balance: float):
-        self.balance = balance
+    def __init__(self, balance: float) -> None:
+        self.balance: float = balance
 
-    def deposit_money(self, amount: float):
+    def deposit_money(self, amount: float) -> None:
         self.balance += amount
 
     def subtract_from_balance(self, amount: float) -> bool:
