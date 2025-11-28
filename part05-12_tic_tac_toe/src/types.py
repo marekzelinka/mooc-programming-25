@@ -1,5 +1,5 @@
 from typing import Literal
 
-type Piece = Literal[""] | Literal["X"] | Literal["O"]
+type Piece = Literal["", "X", "O"]
 
 type Board = list[list[Piece]]
