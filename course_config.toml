@@ -852,10 +852,6 @@ checksum = "12134adc29f90795f814b7b6148f84b9"
 id = 272790
 checksum = "79b612f68fabb9ce422ad4233f2c3b6a"
 
-[exercises.part09-09_car]
-id = 272781
-checksum = "2b97108b7802ff72a4ab794926e817ef"
-
 [exercises.part09-10_recording]
 id = 272784
 checksum = "b0bb4fa38607ad2760e9cfdffed939c7"
