@@ -1,7 +1,4 @@
-# WRITE YOUR SOLUTION HERE:
 # Note! Do not change the class Person!
-
-
 class Person:
     def __init__(self, name: str, age: int, height: int, weight: int) -> None:
         self.name = name

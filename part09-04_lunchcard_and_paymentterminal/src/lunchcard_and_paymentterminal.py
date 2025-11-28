@@ -1,6 +1,3 @@
-# WRITE YOUR SOLUTION HERE:
-
-
 class LunchCard:
     def __init__(self, balance: float):
         self.balance = balance
@@ -63,9 +60,6 @@ class PaymentTerminal:
         return True
 
     def eat_special_lunchcard(self, card: LunchCard):
-        # A special lunch costs 4.30 euros.
-        # If there is enough money on the card, subtract the price of the lunch from the balance
-        # and return True. If not, return False.
         cost = 4.3
 
         new_card_balance = card.balance - cost

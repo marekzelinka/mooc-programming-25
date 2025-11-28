@@ -1,4 +1,3 @@
-# Write your solution after the class ExamSubmission
 # Do not make changes to the class!
 class ExamSubmission:
     def __init__(self, examinee: str, points: int):
@@ -9,7 +8,6 @@ class ExamSubmission:
         return f"ExamSubmission (examinee: {self.examinee}, points: {self.points})"
 
 
-# # WRITE YOUR SOLUTION HERE:
 def passed(submissions: list, lowest_passing: int) -> list:
     return [
         submission for submission in submissions if submission.points >= lowest_passing
