@@ -1,17 +1,23 @@
-# WRITE YOUR SOLUTION HERE:
-
 class Pet:
-    def __init__(self, name: str, description: str):
-        self.name = name
-        self.description = description
+    def __init__(self, name: str, description: str) -> None:
+        self.name: str = name
+        self.description: str = description
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name} ({self.description})"
 
-class Person:
-    def __init__(self, name: str, pet: Pet):
-        self.name = name
-        self.pet = pet
 
-    def __str__(self):
-        return self.name
+class Person:
+    def __init__(self, name: str, pet: Pet) -> None:
+        self.name: str = name
+        self.pet: Pet = pet
+
+    def __str__(self) -> str:
+        return f"{self.name}, whose pal is {self.pet.name}, a {self.pet.description}"
+
+
+if __name__ == "__main__":
+    hulda = Pet("Hulda", "mixed-breed dog")
+    levi = Person("Levi", hulda)
+
+    print(levi)
