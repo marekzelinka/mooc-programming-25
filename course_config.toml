@@ -819,3 +819,63 @@ checksum = "de1dd39ddb02a80fc5ac43d905a0207f"
 [exercises.part08-16_series]
 id = 272964
 checksum = "cc7e178145f70ef2440ffcf972d5e79e"
+
+[exercises.part09-01_fastest_car]
+id = 272782
+checksum = "5c92c0748d08f4c30991ab9ce461af58"
+
+[exercises.part09-02_passing_submissions]
+id = 272794
+checksum = "fd62c8b5668c6554acbea13cc44efc44"
+
+[exercises.part09-03_baby_centre]
+id = 272780
+checksum = "8a1920343eb9a76b20da5a1108c9e6df"
+
+[exercises.part09-04_lunchcard_and_paymentterminal]
+id = 272787
+checksum = "cffc0c94e6e88b59f6e9e39b459fa812"
+
+[exercises.part09-05_comparing_properties]
+id = 272792
+checksum = "f84df8c676e5754e99578443bc6ec385"
+
+[exercises.part09-06_pets]
+id = 272789
+checksum = "5d59bed6b1812f2810cb8cce176f953f"
+
+[exercises.part09-07_box_of_presents]
+id = 272783
+checksum = "12134adc29f90795f814b7b6148f84b9"
+
+[exercises.part09-08_shortest_in_room]
+id = 272790
+checksum = "79b612f68fabb9ce422ad4233f2c3b6a"
+
+[exercises.part09-09_car]
+id = 272781
+checksum = "2b97108b7802ff72a4ab794926e817ef"
+
+[exercises.part09-10_recording]
+id = 272784
+checksum = "b0bb4fa38607ad2760e9cfdffed939c7"
+
+[exercises.part09-11_weather_station]
+id = 272786
+checksum = "4c95dfa9122553c816af249dd6fda33e"
+
+[exercises.part09-12_service_charge]
+id = 272785
+checksum = "f5f0fb9cdd5ba3769ce46030f7b298b7"
+
+[exercises.part09-13_postcodes]
+id = 272793
+checksum = "a664fc51b4042799d0a122f494da72d4"
+
+[exercises.part09-14_list_helper]
+id = 272791
+checksum = "60cae6fb12085068d1effba1b960f411"
+
+[exercises.part09-15_item_suitcase_hold]
+id = 272788
+checksum = "9887a7260d0779c3546e5a57bb0feebd"
