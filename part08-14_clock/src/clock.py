@@ -40,7 +40,20 @@ class Clock:
 
 
 if __name__ == "__main__":
-    watch = Stopwatch()
-    for i in range(3600):
-        print(watch)
-        watch.tick()
+    clock = Clock(23, 59, 55)
+    print(clock)
+    clock.tick()
+    print(clock)
+    clock.tick()
+    print(clock)
+    clock.tick()
+    print(clock)
+    clock.tick()
+    print(clock)
+    clock.tick()
+    print(clock)
+    clock.tick()
+    print(clock)
+
+    clock.set(12, 5)
+    print(clock)
