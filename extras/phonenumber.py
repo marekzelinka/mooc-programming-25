@@ -52,11 +52,12 @@ class PhoneNumber:
     def country_code(self, country_code: str | None) -> None:
         if not country_code:
             self.__country_code = None
+
             return
 
         if country_code not in PhoneNumber.country_codes:
             raise ValueError(
-                f"Country code is not on the list. Available options are: {', '.join(PhoneNumber.country_codes.keys())}"
+                f"Country code is not on the list, available options are: {', '.join(PhoneNumber.country_codes.keys())}"
             )
 
         self.__country_code = country_code
