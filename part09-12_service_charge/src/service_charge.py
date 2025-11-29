@@ -23,7 +23,8 @@ class BankAccount:
         return self.__balance
 
     def __service_charge(self) -> None:
-        self.__balance -= self.__balance / 100
+        service_charge = self.__balance * 0.01
+        self.__balance -= service_charge
 
     def __check_amount(self, amount: float) -> bool:
         return amount < 0
