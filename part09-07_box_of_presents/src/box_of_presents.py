@@ -15,7 +15,7 @@ class Box:
         self.presents.append(present)
 
     def total_weight(self) -> int:
-        return sum(map(lambda present: present.weight, self.presents))
+        return sum([present.weight for present in self.presents])
 
 
 if __name__ == "__main__":
