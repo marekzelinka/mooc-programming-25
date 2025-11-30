@@ -1,5 +1,7 @@
 # MOOC Programming 2025
 
+All exercises for Introduction to Programming & Advanced Course in Programming courses from University of Helsinki, Finland.
+
 ## Setup
 
 Install the [`tmc` cli tool](https://github.com/marekzelinka/mooc-programming-25):
@@ -20,31 +22,37 @@ tmc login # interactive guide
 
 ## Usage
 
-### Logging out
+### Auth
+
+#### Logging out
 
 ```sh
 tmc logout
 ```
 
-### Listing courses
+### Courses
+
+#### Listing courses
 
 ```sh
 tmc courses
 ```
 
-### Downloading course exercises (interactive)
+#### Downloading course exercises (interactive)
 
 ```sh
 tmc download
 ```
 
-### Running tests (interactive)
+### Tests
+
+#### Running tests (interactive)
 
 ```sh
 tmc test
 ```
 
-### Submit (interactive)
+#### Submit (interactive)
 
 ```sh
 tmc submit
