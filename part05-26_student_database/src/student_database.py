@@ -2,8 +2,7 @@ from .types import Course
 
 
 def add_student(students: dict[str, list[Course]], student: str) -> None:
-    courses = []
-    students[student] = courses
+    students[student] = []
 
 
 def print_student(students: dict[str, list[Course]], student: str) -> None:
