@@ -5,7 +5,7 @@ class ListHelper:
 
     @classmethod
     def doubles(cls, my_list: list[int]) -> int:
-        return len(list(filter(lambda number: my_list.count(number) > 1, set(my_list))))
+        return len([number for number in set(my_list) if my_list.count(number) > 1])
 
 
 if __name__ == "__main__":
