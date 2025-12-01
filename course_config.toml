@@ -879,3 +879,51 @@ checksum = "60cae6fb12085068d1effba1b960f411"
 [exercises.part09-15_item_suitcase_hold]
 id = 272788
 checksum = "9887a7260d0779c3546e5a57bb0feebd"
+
+[exercises.part10-01_laptop_computer]
+id = 272888
+checksum = "d3cc52fa293407a3b9f5c530048c6985"
+
+[exercises.part10-02_game_museum]
+id = 272879
+checksum = "d6879c3d7ab4bb5ba9f8ef1a71dc764f"
+
+[exercises.part10-03_areas]
+id = 272883
+checksum = "92a26ec165d30412af3fbe6677403e4d"
+
+[exercises.part10-04_word_game]
+id = 272881
+checksum = "b7b87f0778c36c81eee64a27c7630687"
+
+[exercises.part10-05_supergroup]
+id = 272880
+checksum = "ebcf56154970a9cb56641f058c3f17fa"
+
+[exercises.part10-06_secret_magic_potion]
+id = 272886
+checksum = "046fc36f18233f55c136b4600ec18f63"
+
+[exercises.part10-07_money]
+id = 272884
+checksum = "212544ea576eee1770f3086785f65777"
+
+[exercises.part10-08_simple_date]
+id = 272885
+checksum = "a582e1778b169d42b0abe96dfe3cf7a3"
+
+[exercises.part10-09_iterable_shopping_list]
+id = 272889
+checksum = "c855e3a427bc472ab5a07c066a19b0ea"
+
+[exercises.part10-10_phone_book_v1]
+id = 272890
+checksum = "dc5a7c94c16f7c320e5bfb8c1bee6c39"
+
+[exercises.part10-11_phone_book_v2]
+id = 272887
+checksum = "2d92548a10df72760f7c2960b4be8bbb"
+
+[exercises.part10-12_course_records]
+id = 272882
+checksum = "91b224b1823a1142dc1d57cbde900236"
