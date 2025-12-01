@@ -94,6 +94,7 @@ class PhonebookFileStorage(PhonebookStorageService):
 
 class PhonebookApp:
     def __init__(self, storage_service: PhonebookStorageService) -> None:
+        self.__running: bool = False
         self.__phonebook: Phonebook = Phonebook()
         self.__storage_service: PhonebookStorageService = storage_service
 
@@ -153,17 +154,20 @@ class PhonebookApp:
     def exit(self) -> None:
         self.__storage_service.save_file(self.__phonebook.all_entries())
 
+        self.__running = False
+
     def run(self) -> None:
+        self.__running = True
+
         self.help()
 
-        while True:
+        while self.__running:
             print("")
+
             command = input("command: ")
 
             if command == "0":
                 self.exit()
-
-                break
             elif command == "1":
                 self.add_number()
             elif command == "2":
