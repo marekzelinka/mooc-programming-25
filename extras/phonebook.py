@@ -105,77 +105,86 @@ class PhonebookApp:
             for number in person.numbers:
                 self.__phonebook.add_number(name, number)
 
-    def help(self) -> None:
-        print("commands:")
+    def add_number(self, inputs: tuple[str, str]) -> None:
+        self.__phonebook.add_number(*inputs)
 
+    def add_address(self, inputs: tuple[str, str]) -> None:
+        self.__phonebook.add_address(*inputs)
+
+    def search_by_name(self, inputs: tuple[str]) -> Person | None:
+        return self.__phonebook.get_entry(*inputs)
+
+    def help(self) -> None:
+        print("Commands:")
         print("0 exit")
         print("1 add number")
         print("2 add address")
-        print("3 search")
-
-    def add_number(self) -> None:
-        name = input("name: ")
-        number = input("number: ")
-
-        self.__phonebook.add_number(name, number)
-
-    def add_address(self) -> None:
-        name = input("name: ")
-        address = input("address: ")
-
-        self.__phonebook.add_address(name, address)
-
-    def search(self) -> None:
-        name = input("name: ")
-
-        person = self.__phonebook.get_entry(name)
-
-        if not person:
-            print("address unknown")
-            print("number unknown")
-
-            return
-
-        numbers = person.numbers
-
-        if not numbers:
-            print("number unknown")
-        else:
-            for number in person.numbers:
-                print(number)
-
-        address = person.address
-
-        if not address:
-            print("address unknown")
-        else:
-            print(f"address: {address}")
+        print("3 search by name")
 
     def exit(self) -> None:
         self.__storage_service.save_file(self.__phonebook.all_entries())
 
         self.__running = False
 
+        print("\nExiting...")
+
     def run(self) -> None:
         self.__running = True
+
+        print("Welcome to your phonebook!\n")
 
         self.help()
 
         while self.__running:
             print("")
 
-            command = input("command: ")
+            command = input("Command: ")
 
             if command == "0":
                 self.exit()
             elif command == "1":
-                self.add_number()
+                self.add_number(self.__add_number_inputs())
             elif command == "2":
-                self.add_address()
+                self.add_address(self.__add_address_inputs())
             elif command == "3":
-                self.search()
+                person = self.search_by_name(self.__search_inputs())
+                self.__print_matches(person)
             else:
                 self.help()
+
+    def __add_number_inputs(self):
+        name = input("name: ")
+        number = input("number: ")
+
+        return name, number
+
+    def __add_address_inputs(self):
+        name = input("name: ")
+        address = input("address: ")
+
+        return name, address
+
+    def __search_inputs(self):
+        name = input("name: ")
+
+        return (name,)
+
+    def __print_matches(self, person: Person | None) -> None:
+        if not person:
+            print("Person not found")
+
+            return
+
+        if not person.numbers:
+            print("Unknown phone numbers")
+        else:
+            for number in person.numbers:
+                print(number)
+
+        if not person.address:
+            print("Unknown address")
+        else:
+            print(f"address: {person.address}")
 
 
 # Code for testing
