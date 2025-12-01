@@ -927,3 +927,79 @@ checksum = "2d92548a10df72760f7c2960b4be8bbb"
 [exercises.part10-12_course_records]
 id = 272882
 checksum = "91b224b1823a1142dc1d57cbde900236"
+
+[exercises.part11-01_square_roots]
+id = 272771
+checksum = "aa89bedc5e9cc11c587b93e539f8b1c2"
+
+[exercises.part11-02_rows_of_stars]
+id = 272774
+checksum = "bf4aa1d7a69a143e2f8ddd0b12c1286f"
+
+[exercises.part11-03_best_exam_result]
+id = 272769
+checksum = "a37ac598e08fbcf8b25be7aa7064a231"
+
+[exercises.part11-04_lengths]
+id = 272765
+checksum = "5a1263bb32ac4aa0db5801511e0a3973"
+
+[exercises.part11-05_remove_smaller_than]
+id = 272770
+checksum = "c243265ad147fe0bd92f4ed08ec7ca6f"
+
+[exercises.part11-06_begin_with_vowel]
+id = 272776
+checksum = "b5f245549c4c4d62a5be4ff919a4bf79"
+
+[exercises.part11-07_lottery_numbers]
+id = 272766
+checksum = "41b87e13580750598d62029525aa4db6"
+
+[exercises.part11-08_filter_forbidden]
+id = 272762
+checksum = "6ef0aa880963298a468d92bb1f762693"
+
+[exercises.part11-09_products_in_shopping_list]
+id = 272773
+checksum = "43a878e513b194b3072f26bda69bd91d"
+
+[exercises.part11-10_cheaper_properties]
+id = 272764
+checksum = "18a35ddac39ea62be37dea9bd0734312"
+
+[exercises.part11-11_lengths_of_strings]
+id = 272772
+checksum = "7e3f1f525627981c335ec23aba5734b2"
+
+[exercises.part11-12_most_common_words]
+id = 272763
+checksum = "4fc32fa9f8bf47c341a55c4d3717a174"
+
+[exercises.part11-13_add_numbers_to_list]
+id = 272775
+checksum = "e6226316f83a082d991e092284aa720a"
+
+[exercises.part11-14_recursive_sum]
+id = 272767
+checksum = "2f280dc698875bf799a65abd90f3a63e"
+
+[exercises.part11-15_balanced_brackets]
+id = 272778
+checksum = "41d56498626fbe6122f101166d772f35"
+
+[exercises.part11-16_greatest_node]
+id = 272779
+checksum = "5cca20881ca5fa9afd7ef04b63ea9eb0"
+
+[exercises.part11-17_bosses_and_subordinates]
+id = 272761
+checksum = "419d0b10001105bf92ecdc7bdb6ff862"
+
+[exercises.part11-18_order_book]
+id = 272768
+checksum = "2cd3d260a4e0da79abde62bb82b8d5c0"
+
+[exercises.part11-19_order_book_application]
+id = 272777
+checksum = "d45965a0805ce4c77715e8f53925b4ad"
