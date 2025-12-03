@@ -1,19 +1,16 @@
 # WRITE YOUR SOLUTION HERE:
-from typing import Optional
-
-
 class Node:
     """Class is modeling single node in binary tree"""
 
     def __init__(
         self,
         value,
-        left_child: Optional["Node"] = None,
-        right_child: Optional["Node"] = None,
+        left_child: "Node | None" = None,
+        right_child: "Node | None" = None,
     ) -> None:
         self.value = value
-        self.left_child: Optional["Node"] = left_child
-        self.right_child: Optional["Node"] = right_child
+        self.left_child: "Node | None" = left_child
+        self.right_child: "Node | None" = right_child
 
 
 def greatest_node(root: Node) -> int:

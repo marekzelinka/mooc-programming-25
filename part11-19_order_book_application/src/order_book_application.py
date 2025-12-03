@@ -1,9 +1,6 @@
 # Write your solution here
 # If you use the classes made in the previous exercise, copy them here
 # Write your solution here:
-from unittest.case import expectedFailure
-
-
 class Task:
     ID_COUNTER = 0
 
@@ -138,10 +135,10 @@ class OrderBookApp:
             sum_of_unfinished_workloads,
         ) = self.__orderbook.status_of_programmer(*inputs)
 
-        tasks = f"tasks: finished {finished_tasks_count} not finished {unfinished_tasks_count}"
-        hours = f"hours: done {sum_of_finished_workloads} scheduled {sum_of_unfinished_workloads}"
-
-        print(f"{tasks}, {hours}")
+        print(
+            f"tasks: finished {finished_tasks_count} not finished {unfinished_tasks_count}, "
+            f"hours: done {sum_of_finished_workloads} scheduled {sum_of_unfinished_workloads}"
+        )
 
     def exit(self) -> None:
         self.__running = False
