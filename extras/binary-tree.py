@@ -1,18 +1,15 @@
-from typing import Optional
-
-
 class Node:
     """Models a single node in a binary tree."""
 
     def __init__(
         self,
         value,
-        left_child: Optional["Node"] = None,
-        right_child: Optional["Node"] = None,
+        left_child: "Node | None" = None,
+        right_child: "Node | None" = None,
     ) -> None:
         self.value = value
-        self.left_child: Optional["Node"] = left_child
-        self.right_child: Optional["Node"] = right_child
+        self.left_child: "Node | None" = left_child
+        self.right_child: "Node | None" = right_child
 
 
 def print_nodes(root: Node) -> None:
@@ -49,7 +46,7 @@ def list_of_nodes(root: Node) -> list[int]:
     return node_list
 
 
-def find_node(root: Optional[Node], value) -> bool:
+def find_node(root: Node | None, value) -> bool:
     if not root:
         return False
 

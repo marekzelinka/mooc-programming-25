@@ -1,9 +1,6 @@
-from typing import TypeVar
-
-T = TypeVar("T", int, str)
-
-
-def binary_search(target: list[T], item: T, left: int, right: int) -> bool:
+def binary_search[T: (int, str)](
+    target: list[T], item: T, left: int, right: int
+) -> bool:
     """
     Returns `True` if the item is contained in the target list, `False` otherwise.
 
