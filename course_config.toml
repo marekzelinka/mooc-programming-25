@@ -1003,3 +1003,63 @@ checksum = "2cd3d260a4e0da79abde62bb82b8d5c0"
 [exercises.part11-19_order_book_application]
 id = 272777
 checksum = "d45965a0805ce4c77715e8f53925b4ad"
+
+[exercises.part12-01_remaining_stock]
+id = 272950
+checksum = "9af0113977aed944987d99f53f5ce7e7"
+
+[exercises.part12-02_seasons]
+id = 272953
+checksum = "7930c36198382db36cfdcb631bae4772"
+
+[exercises.part12-03_ratings]
+id = 272957
+checksum = "822e1952edb4c40ced4ca77d9f47942f"
+
+[exercises.part12-04_climbing_route]
+id = 272948
+checksum = "f21c3b63d5a7715c4e9d9d5ad8f24c28"
+
+[exercises.part12-05_climbing_areas]
+id = 272949
+checksum = "44b2d24ab6b7543f226b0370f7bb8ab8"
+
+[exercises.part12-06_ballplayers]
+id = 272960
+checksum = "66751d7b1f1206f49e0f8cf920dda0f3"
+
+[exercises.part12-07_product_search]
+id = 272954
+checksum = "1d6d4b762f4b8ac0bd1f3ace1c3d14e5"
+
+[exercises.part12-08_even_numbers]
+id = 272946
+checksum = "ae5f6362b96ba0f63084e1a62b34f8a5"
+
+[exercises.part12-09_prime_numbers]
+id = 272951
+checksum = "769469c5b63d1deaaa91bee40d93f124"
+
+[exercises.part12-10_random_words]
+id = 272959
+checksum = "cff793b5259980ee2f7336ec2c665e4c"
+
+[exercises.part12-11_attempted_courses]
+id = 272955
+checksum = "3c58aedfa6d8d5b34df86c2f300f5404"
+
+[exercises.part12-12_filtering_attempts]
+id = 272956
+checksum = "fa9ce4d1d7e3ca511eb489beb850209b"
+
+[exercises.part12-13_credits]
+id = 272958
+checksum = "c5941f3002cea8f360c210ebecfb2011"
+
+[exercises.part12-14_regular_expressions]
+id = 272947
+checksum = "45f5764fda4e31c2570e0d8295e26434"
+
+[exercises.part12-15_hockey_statistics]
+id = 272952
+checksum = "3e680f7db93b93194fded3654947f8b2"
