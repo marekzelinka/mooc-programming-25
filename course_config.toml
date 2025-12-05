@@ -1063,3 +1063,71 @@ checksum = "45f5764fda4e31c2570e0d8295e26434"
 [exercises.part12-15_hockey_statistics]
 id = 272952
 checksum = "3e680f7db93b93194fded3654947f8b2"
+
+[exercises.part13-01_four_robots]
+id = 272940
+checksum = "3a0cc17c8e7ea5975ac1b824304d4e40"
+
+[exercises.part13-02_robots_row]
+id = 272931
+checksum = "2ee62a778cc8565f47f26fddb99b0c9c"
+
+[exercises.part13-03_hundred_robots]
+id = 272936
+checksum = "9b537973484590cb60ea704f027a1c38"
+
+[exercises.part13-04_random_robots]
+id = 272930
+checksum = "6db32110aeaec5d0ac599378a846db33"
+
+[exercises.part13-05_vertical_movement]
+id = 272943
+checksum = "ee2c3053de44543d7c7c74b071f0cba1"
+
+[exercises.part13-06_round_the_perimeter]
+id = 272934
+checksum = "cef1bf3afa5864ee840b239ecd176b88"
+
+[exercises.part13-07_two_robots]
+id = 272938
+checksum = "0e31854d048e3c324c698727f477a45f"
+
+[exercises.part13-08_robot_circle]
+id = 272933
+checksum = "77a0196595874afed669c5be8bef86b5"
+
+[exercises.part13-09_bouncing_ball]
+id = 272939
+checksum = "29938a66ff839e1d4d0a680e0104beb7"
+
+[exercises.part13-10_robot_invasion]
+id = 272932
+checksum = "7efc5150214ed3bd18d854aebf6d8574"
+
+[exercises.part13-11_four_directions]
+id = 272945
+checksum = "235f1f8b4b6238373c3d12a0717b3697"
+
+[exercises.part13-12_four_walls]
+id = 272929
+checksum = "02282e6be53bb01d3702925fff89fac3"
+
+[exercises.part13-13_two_players]
+id = 272941
+checksum = "b5281bf3d0b337de3b42bea437228305"
+
+[exercises.part13-14_robot_and_mouse]
+id = 272935
+checksum = "c48fc340430d3035b8b08ae8c2f4dee7"
+
+[exercises.part13-15_robot_location]
+id = 272942
+checksum = "7e528eff80217e734c89eff7871ea3d1"
+
+[exercises.part13-16_clock]
+id = 272937
+checksum = "66173cb6a00b77872dab0f749557510c"
+
+[exercises.part13-17_asteroids]
+id = 272944
+checksum = "0591dcc6b479ddb33bdcb53729753f5c"
