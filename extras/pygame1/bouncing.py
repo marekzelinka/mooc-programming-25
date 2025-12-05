@@ -1,4 +1,3 @@
-# WRITE YOUR SOLUTION HERE:
 import pygame
 
 pygame.init()
@@ -8,7 +7,7 @@ running = True
 dt = 0
 
 robot = pygame.image.load("robot.png")
-velocity = 100
+velocity = 300
 robot_pos = pygame.Vector2(0, 0)
 
 
@@ -17,18 +16,18 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    screen.fill("black")
+    screen.fill("green")
 
     screen.blit(robot, robot_pos)
 
     pygame.display.flip()
 
-    robot_pos.y += velocity * dt
+    robot_pos.x += velocity * dt
 
-    if velocity > 0 and robot_pos.y + robot.get_height() >= 480:
+    if velocity > 0 and robot_pos.x + robot.get_width() >= 640:
         velocity = -velocity
 
-    if velocity < 0 and robot_pos.y <= 0:
+    if velocity < 0 and robot_pos.x <= 0:
         velocity = -velocity
 
     dt = clock.tick(60) / 1000

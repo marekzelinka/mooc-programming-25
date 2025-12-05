@@ -1,14 +1,14 @@
-# WRITE YOUR SOLUTION HERE:
 import pygame
 
+# Pygame setup
 pygame.init()
 screen = pygame.display.set_mode((640, 480))
 clock = pygame.time.Clock()
 running = True
 dt = 0
 
+# Robot setup
 robot = pygame.image.load("robot.png")
-velocity = 100
 robot_pos = pygame.Vector2(0, 0)
 
 
@@ -17,20 +17,21 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    screen.fill("black")
+    # Fill the screen with the green color to wipe away anything from the last frame
+    screen.fill("green")
 
+    # Draw our robot at specific coords
     screen.blit(robot, robot_pos)
 
+    # Flip the display to put new work on screen
     pygame.display.flip()
 
-    robot_pos.y += velocity * dt
+    # Move our robot one pixel to the right
+    robot_pos.x += 300 * dt
 
-    if velocity > 0 and robot_pos.y + robot.get_height() >= 480:
-        velocity = -velocity
-
-    if velocity < 0 and robot_pos.y <= 0:
-        velocity = -velocity
-
+    # Limit FPS to 60
+    # dt is delta time in seconds since last frame
+    # Used for framerate-independent physiscs
     dt = clock.tick(60) / 1000
 
 pygame.quit()

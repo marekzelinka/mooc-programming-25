@@ -1,6 +1,3 @@
-# WRITE YOUR SOLUTION HERE:
-from random import randint
-
 import pygame
 
 pygame.init()
@@ -9,13 +6,11 @@ window = pygame.display.set_mode((640, 480))
 robot = pygame.image.load("robot.png")
 
 window.fill((0, 0, 0))
-
-for _i in range(1000):
-    x = randint(0, 640 - robot.get_width())
-    y = randint(0, 480 - robot.get_height())
-
-    window.blit(robot, (x, y))
-
+# window.blit(robot, (0, 0))
+# window.blit(robot, (300, 0))
+# window.blit(robot, (0, 300))
+# window.blit(robot, (100, 200))
+window.blit(robot, (320 - robot.get_width() / 2, 240 - robot.get_height() / 2))
 pygame.display.flip()
 
 while True:
