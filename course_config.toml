@@ -1131,3 +1131,7 @@ checksum = "66173cb6a00b77872dab0f749557510c"
 [exercises.part13-17_asteroids]
 id = 272944
 checksum = "0591dcc6b479ddb33bdcb53729753f5c"
+
+[exercises.part14-01_own_game]
+id = 272795
+checksum = "67f3f5f2256d9b95585949dffb14b93c"
